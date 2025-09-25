@@ -26,17 +26,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Github className="w-5 h-5" />,
-      url: 'https://github.com',
+      url: 'https://github.com/Setthapong-dev',
       label: 'GitHub'
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/setthapong-thansirisuntorn-9b023a386/',
       label: 'LinkedIn'
     },
     {
       icon: <Mail className="w-5 h-5" />,
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:setthapong.thansirisuntorn.com',
       label: 'Email'
     }
   ]

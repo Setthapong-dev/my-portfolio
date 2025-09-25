@@ -1,5 +1,5 @@
 import React from 'react'
-import { Code, Database, Smartphone, Palette, Server, Cloud, Globe } from 'lucide-react'
+import { Code, Database, Server, Globe } from 'lucide-react'
 
 const Skills = () => {
   const skillCategories = [
@@ -13,7 +13,7 @@ const Skills = () => {
         { name: 'TypeScript', level: 80 },
         { name: 'HTML/CSS', level: 95 },
         { name: 'Tailwind CSS', level: 85 },
-        { name: 'Vue.js', level: 75 }
+        { name: 'Next.js', level: 75 }
       ]
     },
     {
@@ -30,50 +30,12 @@ const Skills = () => {
       ]
     },
     {
-      title: 'Mobile Development',
-      icon: <Smartphone className="w-8 h-8" />,
-      color: 'purple',
-      skills: [
-        { name: 'React Native', level: 80 },
-        { name: 'Flutter', level: 70 },
-        { name: 'iOS Development', level: 65 },
-        { name: 'Android Development', level: 70 }
-      ]
-    },
-    {
-      title: 'UI/UX Design',
-      icon: <Palette className="w-8 h-8" />,
-      color: 'pink',
-      skills: [
-        { name: 'Figma', level: 85 },
-        { name: 'Adobe XD', level: 80 },
-        { name: 'Photoshop', level: 75 },
-        { name: 'Illustrator', level: 70 },
-        { name: 'User Research', level: 80 }
-      ]
-    },
-    {
-      title: 'DevOps & Cloud',
-      icon: <Cloud className="w-8 h-8" />,
-      color: 'orange',
-      skills: [
-        { name: 'Docker', level: 75 },
-        { name: 'AWS', level: 70 },
-        { name: 'Git', level: 90 },
-        { name: 'CI/CD', level: 75 },
-        { name: 'Linux', level: 80 }
-      ]
-    },
-    {
       title: 'Database',
       icon: <Database className="w-8 h-8" />,
       color: 'indigo',
       skills: [
         { name: 'MongoDB', level: 80 },
-        { name: 'MySQL', level: 75 },
         { name: 'PostgreSQL', level: 70 },
-        { name: 'Redis', level: 65 },
-        { name: 'Firebase', level: 85 }
       ]
     },
     {
@@ -83,8 +45,6 @@ const Skills = () => {
       skills: [
         { name: 'ไทย (ภาษาแม่)', level: 100 },
         { name: 'อังกฤษ (TOEIC 850)', level: 85 },
-        { name: 'จีน (พื้นฐาน)', level: 40 },
-        { name: 'ญี่ปุ่น (พื้นฐาน)', level: 30 }
       ]
     }
   ]
@@ -93,9 +53,6 @@ const Skills = () => {
     const colorMap = {
       blue: 'bg-blue-50 border-blue-200 text-blue-600',
       green: 'bg-green-50 border-green-200 text-green-600',
-      purple: 'bg-purple-50 border-purple-200 text-purple-600',
-      pink: 'bg-pink-50 border-pink-200 text-pink-600',
-      orange: 'bg-orange-50 border-orange-200 text-orange-600',
       indigo: 'bg-indigo-50 border-indigo-200 text-indigo-600',
       teal: 'bg-teal-50 border-teal-200 text-teal-600'
     }
@@ -106,9 +63,6 @@ const Skills = () => {
     const colorMap = {
       blue: 'bg-blue-500',
       green: 'bg-green-500',
-      purple: 'bg-purple-500',
-      pink: 'bg-pink-500',
-      orange: 'bg-orange-500',
       indigo: 'bg-indigo-500',
       teal: 'bg-teal-500'
     }
@@ -125,7 +79,7 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <div 
               key={index}
@@ -164,8 +118,8 @@ const Skills = () => {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               'VS Code', 'GitHub', 'Postman', 'Chrome DevTools', 
-              'npm/yarn', 'Webpack', 'Vite', 'Jest', 'Cypress',
-              'Slack', 'Trello', 'Notion', 'Google Analytics'
+              'npm/yarn', 'Axcios', 'Vite', 'Bcrypt', 'Clerk',
+              'Neon', 'Lucide', 'React Router Dom', 'OpenAI API'
             ].map((tool, index) => (
               <span 
                 key={index}
