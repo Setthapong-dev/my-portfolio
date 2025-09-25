@@ -78,7 +78,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">ติดต่อผม</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            มีโปรเจคที่น่าสนใจหรือต้องการปรึกษาเรื่องเทคโนโลยี? ติดต่อผมได้เลยครับ
+            ถ้าสนใจร่วมงานหรือเห็นความสามารถในตัวผม ติดต่อผมได้เลยครับ
           </p>
         </div>
 

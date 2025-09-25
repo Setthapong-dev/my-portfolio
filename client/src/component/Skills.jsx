@@ -10,7 +10,7 @@ const Skills = () => {
       skills: [
         { name: 'React', level: 90 },
         { name: 'JavaScript', level: 85 },
-        { name: 'TypeScript', level: 80 },
+        { name: 'TypeScript', level: 75 },
         { name: 'HTML/CSS', level: 95 },
         { name: 'Tailwind CSS', level: 85 },
         { name: 'Next.js', level: 75 }
@@ -21,12 +21,12 @@ const Skills = () => {
       icon: <Server className="w-8 h-8" />,
       color: 'green',
       skills: [
-        { name: 'Node.js', level: 85 },
-        { name: 'Python', level: 80 },
+        { name: 'Node.js', level: 90 },
+        { name: 'Python', level: 75 },
         { name: 'Express.js', level: 85 },
-        { name: 'MongoDB', level: 75 },
-        { name: 'PostgreSQL', level: 70 },
-        { name: 'REST API', level: 90 }
+        { name: 'MongoDB', level: 70 },
+        { name: 'PostgreSQL', level: 90 },
+        { name: 'REST API', level: 75 }
       ]
     },
     {
@@ -34,8 +34,8 @@ const Skills = () => {
       icon: <Database className="w-8 h-8" />,
       color: 'indigo',
       skills: [
-        { name: 'MongoDB', level: 80 },
-        { name: 'PostgreSQL', level: 70 },
+        { name: 'MongoDB', level: 70 },
+        { name: 'PostgreSQL', level: 90 },
       ]
     },
     {
