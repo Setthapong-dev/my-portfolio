@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="text-center lg:text-left relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-slate-800 mb-6 pb-2">
               สวัสดีครับ
-              <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">ผมชื่อ เศรษฐพงษ์</span>
+              <span className="block bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">ผมชื่อ บอส</span>
             </h1>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed font-medium">
               นักพัฒนาเว็บไซต์และแอปพลิเคชัน ที่มีความเชี่ยวชาญในการนำเอา AI ไปประยุกต์ใช้เพื่อยกระดับเว็บไซต์
