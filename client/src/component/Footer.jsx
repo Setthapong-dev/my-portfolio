@@ -58,7 +58,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-gray-800 text-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:text-white transition-colors"
+                  className="w-10 h-10 bg-gray-800 text-gray-300 rounded-lg flex items-center justify-center hover:bg-gray-700 hover:text-white transition-colors cursor-pointer"
                   title={social.label}
                 >
                   {social.icon}
@@ -75,7 +75,7 @@ const Footer = () => {
                 <li key={index}>
                   <button
                     onClick={() => scrollToSection(link.section)}
-                    className="text-gray-300 hover:text-white transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors cursor-pointer"
                   >
                     {link.label}
                   </button>
@@ -106,7 +106,7 @@ const Footer = () => {
             
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors cursor-pointer"
             >
               <ArrowUp className="w-4 h-4" />
               กลับขึ้นบน

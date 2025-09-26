@@ -13,6 +13,12 @@ app.use(express.static(path.join(__dirname, '../client/dist')))
 // Routes
 app.get('/', (req, res)=>res.send('Server is Live!'))
 
+app.get("/api/cv", (req, res) => {
+    const filePath = path.join(__dirname, "public", "cv.pdf"); // pdf ที่อยู่ในโปรเจค
+    res.setHeader("Content-Type", "application/pdf");
+    res.setHeader("Content-Disposition", "attachment; filename=cv.pdf");
+    res.sendFile(filePath);
+  });
 
 
 // Start server

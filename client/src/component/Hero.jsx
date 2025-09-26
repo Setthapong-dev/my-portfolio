@@ -1,7 +1,27 @@
 import React from 'react'
 import { Download, Github, Linkedin, Mail } from 'lucide-react'
+import axios from 'axios'
 
 const Hero = () => {
+  const downloadCV = async () => {
+    try {
+      const res = await axios.get("http://localhost:3000/api/cv", {
+        responseType: "blob", // สำคัญมาก!
+      });
+
+      // แปลง response เป็นไฟล์
+      const url = window.URL.createObjectURL(new Blob([res.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "cv.pdf"); // ตั้งชื่อไฟล์ตอนโหลด
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } catch (err) {
+      console.error("Error downloading CV:", err);
+    }
+  };
+
   return (
     <section id="hero" className="pt-16 min-h-screen flex items-center relative overflow-hidden">
       {/* Professional Bright Background */}
@@ -32,13 +52,16 @@ const Hero = () => {
               นักพัฒนาเว็บไซต์และแอปพลิเคชัน ที่มีความเชี่ยวชาญในการนำเอา AI ไปประยุกต์ใช้เพื่อยกระดับเว็บไซต์
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+              <button 
+                onClick={downloadCV}
+                className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl cursor-pointer"
+              >
                 <Download size={20} />
                 ดาวน์โหลด CV
               </button>
               <button
                 onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
+                className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 cursor-pointer"
               >
                 ติดต่อผม
               </button>
@@ -70,7 +93,7 @@ const Hero = () => {
                 href="https://github.com/Setthapong-dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-slate-600 text-white rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors shadow-lg"
+                className="w-12 h-12 bg-slate-600 text-white rounded-full flex items-center justify-center hover:bg-slate-700 transition-colors shadow-lg cursor-pointer"
               >
                 <Github size={20} />
               </a>
@@ -78,13 +101,13 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/setthapong-thansirisuntorn-9b023a386/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors shadow-lg"
+                className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors shadow-lg cursor-pointer"
               >
                 <Linkedin size={20} />
               </a>
               <a
                 href="mailto:setthapong.thansirisuntorn@gmail.com"
-                className="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center hover:bg-indigo-700 transition-colors shadow-lg"
+                className="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center hover:bg-indigo-700 transition-colors shadow-lg cursor-pointer"
               >
                 <Mail size={20} />
               </a>
