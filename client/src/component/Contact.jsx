@@ -10,6 +10,47 @@ const Contact = () => {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [result, setResult] = useState('')
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true)
+    setResult("กำลังส่ง...");
+
+    try {
+      const submitData = new FormData();
+      submitData.append("access_key", "f17f8890-f00b-4823-a227-6322b6c6413e");
+      submitData.append("name", formData.name);
+      submitData.append("email", formData.email);
+      submitData.append("subject", formData.subject);
+      submitData.append("message", formData.message);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: submitData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("ส่งข้อความสำเร็จ! ผมจะตอบกลับโดยเร็วที่สุด");
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        console.log("Error", data);
+        setResult("เกิดข้อผิดพลาดในการส่งข้อความ กรุณาลองใหม่อีกครั้ง");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setResult("เกิดข้อผิดพลาดในการส่งข้อความ กรุณาลองใหม่อีกครั้ง");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -18,17 +59,7 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      alert('ขอบคุณสำหรับข้อความ! ผมจะติดต่อกลับไปเร็วๆ นี้')
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    }, 1000)
-  }
+
 
   const contactInfo = [
     {
@@ -210,6 +241,16 @@ const Contact = () => {
                   placeholder="เขียนข้อความของคุณที่นี่..."
                 />
               </div>
+
+              {result && (
+                <div className={`p-4 rounded-lg text-center ${
+                  result.includes('สำเร็จ') 
+                    ? 'bg-green-50 text-green-800 border border-green-200' 
+                    : 'bg-red-50 text-red-800 border border-red-200'
+                }`}>
+                  {result}
+                </div>
+              )}
 
               <button
                 type="submit"
