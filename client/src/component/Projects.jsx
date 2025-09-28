@@ -13,8 +13,8 @@ const Projects = () => {
       category: 'web',
       year: '2025',
       team: 'Solo',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      github: 'https://github.com/Setthapong-dev/gocart',
+      live: 'https://gocart-rust.vercel.app/',
       featured: true
     },
     {
@@ -26,8 +26,8 @@ const Projects = () => {
       category: 'web',
       year: '2025',
       team: 'solo',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      github: 'https://github.com/Setthapong-dev/SuperTool',
+      live: 'https://super-tool-wine.vercel.app/',
       featured: true
     },
     {
@@ -39,8 +39,8 @@ const Projects = () => {
       category: 'web',
       year: '2025',
       team: 'Solo',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      github: 'https://github.com/Setthapong-dev/Ai-See',
+      live: 'https://ai-see.vercel.app/',
       featured: true
     },
     {
@@ -52,8 +52,8 @@ const Projects = () => {
       category: 'web',
       year: '2025',
       team: 'solo',
-      github: 'https://github.com',
-      live: 'https://example.com',
+      github: 'https://github.com/Setthapong-dev/IoT-web',
+      live: 'https://iot-web-tawny.vercel.app/',
       featured: true
     }
   ]
