@@ -5,7 +5,8 @@ import axios from 'axios'
 const Hero = () => {
   const downloadCV = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/cv", {
+      const serverUrl = import.meta.env.VITE_SERVER_URL || "http://localhost:3000";
+      const res = await axios.get(`${serverUrl}/api/cv`, {
         responseType: "blob", // สำคัญมาก!
       });
 
