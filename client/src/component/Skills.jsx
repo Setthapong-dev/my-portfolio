@@ -118,7 +118,7 @@ const Skills = () => {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               'VS Code', 'GitHub', 'Postman', 'Chrome DevTools', 
-              'npm/yarn', 'Axcios', 'Vite', 'Bcrypt', 'Clerk',
+              'npm/yarn', 'Axios', 'Vite', 'Bcrypt', 'Clerk',
               'Neon', 'Lucide', 'React Router Dom', 'OpenAI API'
             ].map((tool, index) => (
               <span 

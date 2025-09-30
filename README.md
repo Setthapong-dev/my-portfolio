@@ -167,8 +167,8 @@ client/
 ## 📞 ติดต่อ
 
 - **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your Name](https://linkedin.com/in/yourprofile)
+- **GitHub**: [@yourusername](https://github.com/Setthapong-dev)
+- **LinkedIn**: [Your Name](https://www.linkedin.com/in/setthapong-thansirisuntorn-9b023a386/)
 
 ---
 
