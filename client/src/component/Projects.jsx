@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Multi Vendor E-Commerce Website with Ai Tools',
+      title: 'Multi Vendor E-Commerce Website with AI Tools',
       description: 'เว็บไซต์ขายของออนไลน์ที่ครบครันด้วยระบบชำระเงิน การจัดการสินค้า และระบบสมาชิก พร้อม  AI ช่วยกรอกข้อมูลสินค้า',
       image: '/api/placeholder/400/300',
       technologies: ['Next.js', 'PostgreSQL', 'Rest API', 'OpenAI API'],
@@ -19,7 +19,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'SaaS Multi Ai Tools',
+      title: 'SaaS Multi AI Tools',
       description: 'เว็ปแอปพลิเคชันรวม Service AI พร้อมระบบสมาชิก',
       image: '/api/placeholder/400/300',
       technologies: ['React', 'Node.js', 'PostgreSQL', 'Rest API', 'OpenAI API'],
