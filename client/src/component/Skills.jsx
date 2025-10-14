@@ -44,7 +44,7 @@ const Skills = () => {
       color: 'teal',
       skills: [
         { name: 'ไทย (ภาษาแม่)', level: 100 },
-        { name: 'อังกฤษ (TOEIC 850)', level: 85 },
+        { name: 'อังกฤษ (TOEIC 750)', level: 85 },
       ]
     }
   ]
