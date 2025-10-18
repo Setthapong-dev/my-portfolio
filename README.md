@@ -166,10 +166,10 @@ client/
 
 ## 📞 ติดต่อ
 
-- **Email**: your.email@example.com
+- **Email**: setthapong.thansirisuntorn@gmail.com
 - **GitHub**: [@yourusername](https://github.com/Setthapong-dev)
 - **LinkedIn**: [Your Name](https://www.linkedin.com/in/setthapong-thansirisuntorn-9b023a386/)
 
 ---
 
-สร้างด้วย ❤️ โดย [ชื่อของคุณ]
+สร้างด้วย ❤️ โดย [Setthapong-dev]
