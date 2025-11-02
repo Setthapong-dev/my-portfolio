@@ -46,7 +46,7 @@ const Projects = () => {
     {
       id: 4,
       title: 'Full Stack Project',
-      description: 'เว็ปไซต์หน้าบ้านหลังบ้าน',
+      description: 'เว็ปไซต์แสดงผลสถานะโดรนพร้อมอัปเดตค่าแบบเรียลไทม์',
       image: '/api/placeholder/400/300',
       technologies: ['React', 'Node.js', 'Rest API', 'Axios'],
       category: 'web',
